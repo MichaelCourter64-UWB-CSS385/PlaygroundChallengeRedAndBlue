@@ -22,7 +22,6 @@ public class PlayerMovement : MonoBehaviour
             // Read inputs
             moveHorizontal = Input.GetAxis("Horizontal");
             moveVertical = 0;
-            //float moveVertical = Input.GetAxis("Vertical");
 
             // Convert inputs to Vector2
             Vector2 movement = new Vector2(moveHorizontal, moveVertical);
