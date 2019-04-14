@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4749784367163384}
   - component: {fileID: 212625364186824784}
   - component: {fileID: 61580540501824262}
-  - component: {fileID: 114099585164514988}
   m_Layer: 8
   m_Name: RedDoor
   m_TagString: Red
@@ -39,6 +38,7 @@ GameObject:
   - component: {fileID: 4967987922914298}
   - component: {fileID: 212200519673365388}
   - component: {fileID: 61370799295138270}
+  - component: {fileID: 114462925382807220}
   m_Layer: 8
   m_Name: DoorTrigger
   m_TagString: Red
@@ -183,12 +183,12 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.7400002, y: 3.28}
   m_EdgeRadius: 0
---- !u!114 &114099585164514988
+--- !u!114 &114462925382807220
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1001016455133914}
+  m_GameObject: {fileID: 1053439675281854}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 19b8906c4d4ba8c49b1d034842a852d4, type: 3}
