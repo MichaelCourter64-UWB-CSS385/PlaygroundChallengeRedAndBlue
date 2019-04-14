@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class KeyInventory : MonoBehaviour {
 
-    // private bool[] keys = new bool[5];
-    private int keyCount = 0;
+    private int keyCount;
 
 	// Use this for initialization
 	void Start () {
