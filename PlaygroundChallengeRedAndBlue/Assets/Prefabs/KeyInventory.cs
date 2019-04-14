@@ -5,7 +5,7 @@ using UnityEngine;
 public class KeyInventory : MonoBehaviour {
 
     // private bool[] keys = new bool[5];
-    private int keyCount;
+    private int keyCount = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -16,17 +16,6 @@ public class KeyInventory : MonoBehaviour {
     {
         keyCount--;
     }
-
-
-    //private void OnTriggerEnter(Collider other)
-    //{
-    //    if ((this.tag == "Blue" && other.gameObject.CompareTag("BlueKey"))
-    //        || (this.tag == "Red" && other.gameObject.CompareTag("RedKey")))
-    //    {
-    //        Destroy(other.gameObject);
-    //        AddKey();
-    //    }
-    //}
 
     public void AddKey()
     {
