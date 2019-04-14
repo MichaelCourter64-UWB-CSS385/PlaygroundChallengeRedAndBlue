@@ -26,9 +26,11 @@ GameObject:
   - component: {fileID: 114017992864687404}
   - component: {fileID: 114927956555478470}
   - component: {fileID: 114138192964262078}
+  - component: {fileID: 114915095876861450}
+  - component: {fileID: 114007426985831300}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Player
+  m_TagString: Red
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -154,6 +156,17 @@ PolygonCollider2D:
       - {x: -0.11, y: -1.25}
       - {x: -0.14, y: -1.0699999}
       - {x: 0.14, y: -1.06}
+--- !u!114 &114007426985831300
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1137479929529338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 795f99d21af6c5a4293c1a6a085c8fe5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114017992864687404
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -194,6 +207,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6.5
   maxspeed: 15
+--- !u!114 &114915095876861450
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1137479929529338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4720d52a8a81124aaa4fcb15d761b34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickUpDistance: 10
 --- !u!114 &114927956555478470
 MonoBehaviour:
   m_ObjectHideFlags: 1

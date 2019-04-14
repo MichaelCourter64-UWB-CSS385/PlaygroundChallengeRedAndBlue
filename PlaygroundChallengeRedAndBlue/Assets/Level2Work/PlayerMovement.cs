@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void Update() {
-        if (this.gameObject.tag == "Player") {
+        if (this.gameObject.tag == "Red") {
             // Read inputs
             moveHorizontal = Input.GetAxis("Horizontal");
             moveVertical = 0;
@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 R2D.AddForce(movement * speed);
             }
-        } else if (this.gameObject.tag == "Player2") {
+        } else if (this.gameObject.tag == "Blue") {
             // Read inputs
             moveHorizontal = Input.GetAxis("Horizontal2");
             moveVertical = 0;
