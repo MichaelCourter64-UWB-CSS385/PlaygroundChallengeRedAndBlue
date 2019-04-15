@@ -27,6 +27,7 @@ GameObject:
   - component: {fileID: 114078347424723094}
   - component: {fileID: 114017967383396698}
   - component: {fileID: 114497100866582054}
+  - component: {fileID: 114926526597605334}
   m_Layer: 0
   m_Name: Player2
   m_TagString: Blue
@@ -147,6 +148,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6.25
   maxspeed: 15
+--- !u!114 &114926526597605334
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1803110448086616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f74169e233b6d094bae8043a3d6884cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactKey: 306
+  interactionBoxOffset: {x: 0, y: 0, z: 0}
+  color: Blue
 --- !u!212 &212710233078363602
 SpriteRenderer:
   m_ObjectHideFlags: 1
