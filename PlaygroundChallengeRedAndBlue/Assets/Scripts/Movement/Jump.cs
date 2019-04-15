@@ -40,7 +40,7 @@ public class Jump : Physics2DObject
 		if(checkGround
 			&& collisionData.gameObject.CompareTag(groundTag))
 		{
-            if (Physics2D.CircleCast(transform.position - new Vector3(0, -0.1f, 0), GetComponent<CircleCollider2D>().radius, new Vector2(0, -1), 0))
+            if (Physics2D.CircleCast(transform.position - new Vector3(0, 0.9f, 0), GetComponent<CircleCollider2D>().radius - 0.05f, new Vector2(0, -1), 0).transform != null)
             {
                 canJump = true;
             }
