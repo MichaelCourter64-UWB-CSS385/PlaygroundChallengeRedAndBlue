@@ -4,10 +4,11 @@ using System.Collections;
 [AddComponentMenu("Playground/Movement/Jump")]
 [RequireComponent(typeof(Rigidbody2D))]
 public class Jump : Physics2DObject
-{	
+{
 	[Header("Jump setup")]
-	// the key used to activate the push
-	public KeyCode key = KeyCode.Space;
+
+    // the key used to activate the push
+    public KeyCode key = KeyCode.Space;
 
 	// strength of the push
 	public float jumpStrength = 10f;
@@ -16,9 +17,9 @@ public class Jump : Physics2DObject
 	//if the object collides with another object tagged as this, it can jump again
 	public string groundTag = "Ground";
 
-	//this determines if the script has to check for when the player touches the ground to enable him to jump again
-	//if not, the player can jump even while in the air
-	public bool checkGround = true;
+    //this determines if the script has to check for when the player touches the ground to enable him to jump again
+    //if not, the player can jump even while in the air
+    public bool checkGround = true;
 
 	private bool canJump = true;
 
@@ -39,7 +40,10 @@ public class Jump : Physics2DObject
 		if(checkGround
 			&& collisionData.gameObject.CompareTag(groundTag))
 		{
-			canJump = true;
+            if (Physics2D.CircleCast(transform.position - new Vector3(0, -0.1f, 0), GetComponent<CircleCollider2D>().radius, new Vector2(0, -1), 0))
+            {
+                canJump = true;
+            }
 		}
 	}
 }

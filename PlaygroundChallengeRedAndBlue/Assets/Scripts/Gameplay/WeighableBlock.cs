@@ -18,9 +18,4 @@ public class WeighableBlock : MovableBlock
 
         transform.position = new Vector3(transform.position.x, newXPosition, transform.position.z);
     }
-
-    private void Update()
-    {
-        Move(-0.25f * Time.deltaTime);
-    }
 }
