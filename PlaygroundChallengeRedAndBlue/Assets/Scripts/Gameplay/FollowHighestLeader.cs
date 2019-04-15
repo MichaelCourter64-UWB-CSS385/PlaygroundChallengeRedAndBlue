@@ -9,6 +9,7 @@ public class FollowHighestLeader : MonoBehaviour {
     [SerializeField] float smoothTime;
 //    [SerializeField] float cameraFollowTriggerPercentage;
     [SerializeField] float minimumHeight;
+    [SerializeField] float maximumHeight;
 
     Vector3 dampVelocity = new Vector3();
 
@@ -34,7 +35,7 @@ public class FollowHighestLeader : MonoBehaviour {
 
 //        verticalScreenRatioPosition = (thisCamera.pixelHeight - thisCamera.WorldToScreenPoint(highestLeader.transform.position).y) / thisCamera.pixelHeight;
 
-        actualHeight = Mathf.Clamp(highestLeader.transform.position.y, minimumHeight, int.MaxValue);
+        actualHeight = Mathf.Clamp(highestLeader.transform.position.y, minimumHeight, maximumHeight);
 
         transform.position = Vector3.SmoothDamp(transform.position, new Vector3(transform.position.x, actualHeight, transform.position.z), ref dampVelocity, smoothTime);
 	}
