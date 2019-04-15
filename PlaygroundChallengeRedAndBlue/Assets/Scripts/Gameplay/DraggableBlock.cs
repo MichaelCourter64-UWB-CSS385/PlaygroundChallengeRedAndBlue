@@ -18,9 +18,4 @@ public class DraggableBlock : MovableBlock
         
         transform.position = new Vector3(newXPosition, transform.position.y, transform.position.z);
     }
-
-    private void Update()
-    {
-        Move(-0.25f * Time.deltaTime);
-    }
 }
